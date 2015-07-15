@@ -31,33 +31,35 @@
 						  	</ul>
 						</article>
 					</div>
-					<div class=" archive-card col l4 m12 s12">
-						<div class="card">
-							<ul class="collapsible popout" data-collapsible="expandable">
-							    <li>
-							      <div class="card collapsible-header teal lighten-1 white-text waves-effect waves-light z-depth-2"><h5 class="center-align">Posts By This Author</h5></div>
-							      <div class="collapsible-body">
-										{% assign posts = site.posts | where: "author", {{page.author}} %}
-										{% for post in posts limit:10 %}
-			  								<h5>{{post.date | date_to_string }}&nbsp;&nbsp;&nbsp;<a class="index_post" href="{{post.url}}">{{ post.title }}</a></h5>
-										{% endfor %}
-							      </div>
-							    </li>
-							    <li>
-							      <div class="card collapsible-header teal lighten-1 white-text waves-effect waves-light z-depth-2"><h5 class="center-align">Full Archive</h5></div>
-							      <div class="collapsible-body">
-										{% for post in site.posts %}
-				     						<h5>{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;<a class="index_post" href="{{ post.url }}">{{post.title}}</a></h5>
-				  						{% endfor %}
-							      </div>
-							    </li>
-						  	</ul>
+					<div>
+						<div class=" archive-card col l4 m12 s12">
+							<div class="card">
+								<ul class="collapsible popout" data-collapsible="expandable">
+								    <li>
+								      <div class="card collapsible-header teal lighten-1 white-text waves-effect waves-light z-depth-2"><h5 class="center-align">Posts By This Author</h5></div>
+								      <div class="collapsible-body">
+											{% assign posts = site.posts | where: "author", {{page.author}} %}
+											{% for post in posts limit:10 %}
+				  								<h5>{{post.date | date_to_string }}&nbsp;&nbsp;&nbsp;<a class="index_post" href="{{post.url}}">{{ post.title }}</a></h5>
+											{% endfor %}
+								      </div>
+								    </li>
+								    <li>
+								      <div class="card collapsible-header teal lighten-1 white-text waves-effect waves-light z-depth-2"><h5 class="center-align">Full Archive</h5></div>
+								      <div class="collapsible-body">
+											{% for post in site.posts %}
+					     						<h5>{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;<a class="index_post" href="{{ post.url }}">{{post.title}}</a></h5>
+					  						{% endfor %}
+								      </div>
+								    </li>
+							  	</ul>
+						  	</div>
 					  	</div>
-				  	</div>
-				  	<div class="col l4 m12 s12">
-				  		<div class="card disqus">
-				  		{% include disqus.html %}
-				  		</div>
+					  	<div class="col l4 m12 s12">
+					  		<div class="card disqus">
+					  		{% include disqus.html %}
+					  		</div>
+					  	</div>
 				  	</div>
 				</div>
 			</div>
