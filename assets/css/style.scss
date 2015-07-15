@@ -28,7 +28,7 @@ a:hover {
 nav {
 	background-color: #26a69a !important;
 	height: 70px;
-	border-bottom: 5px solid black;
+	/*border-bottom: 5px solid black;*/
 	color: red;
 	.brand-logo {
 		margin-left: 5px;
@@ -76,7 +76,8 @@ nav {
 	overflow: inherit !important;
 }
 .index-posts {
-	margin-top: 15px;
+	margin: 15px auto;
+	width: 500px;
 }
 .post_title, .site_author, .post_author {
 	text-align: center;
@@ -110,13 +111,6 @@ p {
 .archive-card {
 	margin: 19px 0 10px 0;
 }
-/*.sidebar {
-	position: fixed;
-	top: 60px;
-	right: 0;
-	float: right; 
-	max-height: 500px;
-}*/
 @media (max-width: 1166px) {
 	article, img {
 		float: none !important;
@@ -162,5 +156,10 @@ p {
 @media (max-width: 601px) {
 	.side-nav i {
 		margin-top: 18px;
+	}
+}
+@media (max-width: 500px) {
+	.index-posts {
+		width: 400px;
 	}
 }
