@@ -10,7 +10,7 @@
 				<div class="row">
 					<div class="col l8 m12 s12">
 						<article class="card">
-						    <header class="teal lighten-1 z-depth-2 white-text">
+						    <header>
 						        <h2 class="post_title">{{ page.title }}</h2>
 						        <h4 class="time"><time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time></h4>
 						        <div>
@@ -36,7 +36,7 @@
 							<div class="card">
 								<ul class="collapsible popout" data-collapsible="expandable">
 								    <li>
-								      <div class="card collapsible-header teal lighten-1 white-text waves-effect waves-light z-depth-2"><h5 class="center-align">Posts By This Author</h5></div>
+								      <div class="card collapsible-header black-text waves-effect waves-light z-depth-1"><h5 class="center-align">Posts By This Author</h5></div>
 								      <div class="collapsible-body">
 											{% assign posts = site.posts | where: "author", {{page.author}} %}
 											{% for post in posts limit:10 %}
@@ -45,9 +45,9 @@
 								      </div>
 								    </li>
 								    <li>
-								      <div class="card collapsible-header teal lighten-1 white-text waves-effect waves-light z-depth-2"><h5 class="center-align">Full Archive</h5></div>
+								      <div class="card collapsible-header black-text waves-effect waves-light z-depth-1"><h5 class="center-align">Archive</h5></div>
 								      <div class="collapsible-body">
-											{% for post in site.posts %}
+											{% for post in site.posts limit:20 %}
 					     						<h5>{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;<a class="index_post" href="{{ post.url }}">{{post.title}}</a></h5>
 					  						{% endfor %}
 								      </div>

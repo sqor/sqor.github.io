@@ -14,10 +14,9 @@ img {
 }
 a {
 	text-decoration: none;
-	color: #26a69a;
 }
 a:hover {
-	color: black;
+	text-decoration: underline;
 }
 .page-wrap {
 	height: 100%;
@@ -32,6 +31,9 @@ nav {
 	.brand-logo {
 		margin-left: 5px;
 	}
+}
+header, .index-card-title, .card-title {
+	border-bottom: 1px solid #EBEEF0;
 }
 .header a {
 	color: white;
@@ -52,12 +54,6 @@ nav {
 }
 .copy {
 	text-align: center;
-	a {
-		color: #26a69a;
-		&:hover {
-			color: black;
-		}
-	}
 }
 .main-title {
 	color: white;
@@ -66,10 +62,10 @@ nav {
 }
 .index_post {
 	text-decoration: none;
-	color: #26a69a;
 }
 .index-card, .tag-card {
 	min-height: 125px;
+	border-radius: 4px !important;
 }
 .index-card, .tag-card {
 	overflow: inherit !important;
@@ -133,7 +129,6 @@ p {
 	min-height: 625px;
 }
 .tag_post {
-	color: #26a69a;
 	padding-left: 5px;
 }
 .tags_title {
@@ -171,9 +166,6 @@ p {
 }
 .sqor-about {
 	list-style-type: inherit;
-	a {
-		color: #26a69a;
-	}
 }
 .social-media-list {
 	text-align: center;
@@ -182,9 +174,6 @@ p {
 	display: inline;
 	list-style-type: none;
 	padding: 10px;
-	a {
-		color: #26a69a;
-	}
 }
 .about-text {
 	padding: 0 5px;
