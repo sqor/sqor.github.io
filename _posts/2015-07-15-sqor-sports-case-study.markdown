@@ -2,7 +2,7 @@
 layout: post
 title: Sqor Sports Case Study
 author: Sqor Sports
-tags: [case study, athletes, engagement]
+tags: [case-study, athletes, engagement]
 gravatar: 
 ---
 
