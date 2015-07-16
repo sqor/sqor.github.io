@@ -28,7 +28,6 @@ a:hover {
 nav {
 	background-color: #26a69a !important;
 	height: 70px;
-	/*border-bottom: 5px solid black;*/
 	color: red;
 	.brand-logo {
 		margin-left: 5px;
@@ -135,6 +134,7 @@ p {
 }
 .tag_post {
 	color: #26a69a;
+	padding-left: 5px;
 }
 .tags_title {
 	text-transform: uppercase;
@@ -162,4 +162,30 @@ p {
 	.index-posts {
 		width: 400px;
 	}
+}
+.about {
+	min-height: 550px;
+}
+.about {
+	padding: 10px;
+}
+.sqor-about {
+	list-style-type: inherit;
+	a {
+		color: #26a69a;
+	}
+}
+.social-media-list {
+	text-align: center;
+}
+.social-media-list li {
+	display: inline;
+	list-style-type: none;
+	padding: 10px;
+	a {
+		color: #26a69a;
+	}
+}
+.about-text {
+	padding: 0 5px;
 }
