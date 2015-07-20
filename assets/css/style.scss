@@ -12,7 +12,7 @@ img {
 	height: auto;
 	width: auto\9;
 }
-a, .index-post {
+a, .index-post, .nav-button:hover {
 	text-decoration: none;
 }
 a:hover {
@@ -56,7 +56,7 @@ header, .index-card-title, .card-title {
 }
 .index-posts {
 	margin: 15px auto;
-	width: 500px;
+	max-width: 500px;
 }
 .post-title, .site-author, .post-author {
 	text-align: center;
@@ -132,11 +132,6 @@ p {
 @media (max-width: 601px) {
 	.side-nav i {
 		margin-top: 18px;
-	}
-}
-@media (max-width: 500px) {
-	.index-posts {
-		width: 400px;
 	}
 }
 .about {
