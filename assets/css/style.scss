@@ -12,7 +12,7 @@ img {
 	height: auto;
 	width: auto\9;
 }
-a {
+a, .index-post {
 	text-decoration: none;
 }
 a:hover {
@@ -41,18 +41,7 @@ header, .index-card-title, .card-title {
 		color: black;
 	}
 }
-.nav_menu {
-	text-align: center;
-	width: 100%;
-	padding-left: 0;
-	margin-top: 10px;
-}
-.nav_menu li {
-	display: inline;
-	list-style-type: none;
-	padding: 5px;
-}
-.copy {
+.copy, .time, .social-media-list {
 	text-align: center;
 }
 .main-title {
@@ -60,21 +49,16 @@ header, .index-card-title, .card-title {
 	text-align: center;
 	text-transform: uppercase;
 }
-.index_post {
-	text-decoration: none;
-}
 .index-card, .tag-card {
-	min-height: 125px;
+	min-height: 225px;
 	border-radius: 4px !important;
-}
-.index-card, .tag-card {
 	overflow: inherit !important;
 }
 .index-posts {
 	margin: 15px auto;
 	width: 500px;
 }
-.post_title, .site_author, .post_author {
+.post-title, .site-author, .post-author {
 	text-align: center;
 }
 .entry {
@@ -92,15 +76,15 @@ p {
 	color: black;
 	margin-bottom: 1.5em;
 }
-.post_container {
+.post-container {
 	display: inline-block;
 	width: 100%;
 	min-height: 300px;
 }
-.archive, .author_posts {
+.archive {
 	margin: 8px !important;
 }
-.archive-header a, .author_post_header {
+.archive-header a {
 	color: white !important;
 }
 .archive-card {
@@ -125,17 +109,14 @@ p {
 	list-style-type: none;
 	padding: 10px;
 }
-.tags_list {
+.tags-list {
 	min-height: 625px;
 }
-.tag_post {
+.tag-post, .tag-link {
 	padding-left: 5px;
 }
-.tags_title {
+.tags-title {
 	text-transform: uppercase;
-	text-align: center;
-}
-.time, .card-title {
 	text-align: center;
 }
 .gravatar {
@@ -166,9 +147,6 @@ p {
 }
 .sqor-about {
 	list-style-type: inherit;
-}
-.social-media-list {
-	text-align: center;
 }
 .social-media-list li {
 	display: inline;
