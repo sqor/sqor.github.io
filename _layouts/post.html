@@ -6,23 +6,23 @@
 	<body>
 		{% include header.html %}
 		<div class="page-wrap">
-			<div class="post_container">
+			<div class="post-container">
 				<div class="row">
 					<div class="col l8 m12 s12">
 						<article class="card">
 						    <header>
-						        <h2 class="post_title">{{ page.title }}</h2>
+						        <h2 class="post-title">{{ page.title }}</h2>
 						        <h4 class="time"><time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time></h4>
 						        <div>
 						        	{% if page.gravatar %}<img class="gravatar" src="http://www.gravatar.com/avatar/{{page.gravatar}}" />{% else %}<img class="gravatar" src="/assets/images/sqor_logo.png">{% endif %}
 						        </div>
 						        <div>
-						        	{% if page.author %}<h4 class="post_author">Posted by:&nbsp;&nbsp;{{page.author}}</h4>{% else %}<h4 class="site_author">Posted by:&nbsp;&nbsp;{{site.author}}</h4>{% endif%}
+						        	{% if page.author %}<h4 class="post-author">Posted by:&nbsp;&nbsp;{{page.author}}</h4>{% else %}<h4 class="site-author">Posted by:&nbsp;&nbsp;{{site.author}}</h4>{% endif%}
 						        </div>
 						    </header>
 							<div class="entry">{{ content }}</div>
 							<div class="tags">
-								<h6 class="tags_title">Tags: {{page.tags | array_to_sentence_string}}</h6>
+								<h6 class="tags-title">Tags: {{page.tags | array_to_sentence_string}}</h6>
 							</div><br/>
 							<ul class="social-plugins center-align">
 							  	<li><script type="text/javascript" src="//www.redditstatic.com/button/button3.js"></script></li>
@@ -40,7 +40,7 @@
 								      <div class="collapsible-body">
 											{% assign posts = site.posts | where: "author", {{page.author}} %}
 											{% for post in posts limit:10 %}
-				  								<h5>{{post.date | date_to_string }}&nbsp;&nbsp;&nbsp;<a class="index_post" href="{{post.url}}">{{ post.title }}</a></h5>
+				  								<h5>{{post.date | date_to_string }}&nbsp;&nbsp;&nbsp;<a class="index-post" href="{{post.url}}">{{ post.title }}</a></h5>
 											{% endfor %}
 								      </div>
 								    </li>
@@ -48,7 +48,7 @@
 								      <div class="card collapsible-header black-text waves-effect waves-light z-depth-1"><h5 class="center-align">Archive</h5></div>
 								      <div class="collapsible-body">
 											{% for post in site.posts limit:20 %}
-					     						<h5>{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;<a class="index_post" href="{{ post.url }}">{{post.title}}</a></h5>
+					     						<h5>{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;<a class="index-post" href="{{ post.url }}">{{post.title}}</a></h5>
 					  						{% endfor %}
 								      </div>
 								    </li>
