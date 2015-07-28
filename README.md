@@ -2,7 +2,7 @@
 
 ##[Visit The Blog](http://sqor.github.io/)
 
-At Sqor, we take pride in what we do, and how we get it done. To put it another way, we are all abouot solutions.  A huge component in making our product a success is utilizing all of the best technologies out there, and our development team have individually and collectively put together some great code.  This will be a place for them to share some of their ideas with an audience that is interested in seeing how we have built our platform, as well as an opportunity to collaborate with others outside of our office.  We are huge advocate for open source technologies, and we encourage anyone that is interested in helping to shape the future of Sqor to contact us.
+At Sqor, we take pride in what we do, and how we get it done. To put it another way, we are all about solutions.  A huge component in making our product a success is utilizing all of the best technologies out there, and our sales and engineering teams have individually and collectively put together some great solutions to everyday problems.  This will be a place for them to share some of their ideas with an audience that is interested in seeing how we have built our platform, as well as an opportunity to collaborate with others outside of our office.  We are huge advocate for open source technologies, and we encourage anyone that is interested in helping to shape the future of Sqor to contact us.
 
 As a contributor to this blog, first clone this repo.  You'll then want to make sure that you follow this specific format for creating a new post:
 
