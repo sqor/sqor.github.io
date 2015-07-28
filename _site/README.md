@@ -2,7 +2,7 @@
 
 ##[Visit The Blog](http://sqor.github.io/)
 
-At Sqor, we take pride in what we do, and how we get it done.  A huge component in making our app a success is utilizing all of the best technologies out there, and our development team have individually and collectively put together some great code.  This will be a place for them to share some of their ideas with an audience that is interested in seeing how we have built our platform, as well as an opportunity to collaborate with others outside of our office.  We are huge advocate for open source technologies, and we encourage anyone that is interested in helping to shape the future of Sqor to contact us.
+At Sqor, we take pride in what we do, and how we get it done. To put it another way, we are all abouot solutions.  A huge component in making our product a success is utilizing all of the best technologies out there, and our development team have individually and collectively put together some great code.  This will be a place for them to share some of their ideas with an audience that is interested in seeing how we have built our platform, as well as an opportunity to collaborate with others outside of our office.  We are huge advocate for open source technologies, and we encourage anyone that is interested in helping to shape the future of Sqor to contact us.
 
 As a contributor to this blog, first clone this repo.  You'll then want to make sure that you follow this specific format for creating a new post:
 
@@ -10,7 +10,7 @@ As a contributor to this blog, first clone this repo.  You'll then want to make 
 
 >2.) At the very top of your new markdown file, you will need to include YAML Front Matter.  This is information about the post that can be used across the rest of the website in reference to any given post.  It also allows for a consistent way to showcase a particular authors' posts.  Front Matter needs to be entered between two sets of three (3) dashes, like so: ---. [Front Matter](http://jekyllrb.com/docs/frontmatter/)
 
->3.) You will need to include a layout type within your Front Matter.  At this time, the layout type that you should use is called "post". [Example Post](https://raw.githubusercontent.com/sqor/sqor.github.io/master/_posts/2015-06-23-andy_blogpost1.markdown)
+>3.) You will need to include a layout type within your Front Matter.  At this time, the layout type that you should use is called "post". [Example Post](https://raw.githubusercontent.com/sqor/sqor.github.io/master/_posts/2015-07-28-jekyll_ghpages.markdown)
 
 >4.) To include tags on a post, just include them with your Front Matter like the example above, separated by a comma, and within an array.  These tags will be parsed for a search by common tags filter. [Tags](http://sqor.github.io/tags.html)
 
